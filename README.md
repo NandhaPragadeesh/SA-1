@@ -1,42 +1,28 @@
-# SKILL ASSESSMENT 2
+# SKILL ASSESSMENT 1
 
 ### 🎯 **Aim**
-To write an assembly language program in 8051 to generate a 250 ms delay using Timer 1 in Mode 1 and blink an LED connected to Port 0.5 continuously.
+Write an assembly language program in 8086 to calculate the sum of 5 numbers stored sequentially in memory and store the result in a another memory location.
+
 
 
 ---
 
 ### ⚙️ **Components Required**
 - Personal Computer
-- Keil µVision Software
+- masm Software
 
 ---
 
 ### 💻 **Program**
 
+<img width="639" height="423" alt="Screenshot 2025-11-01 231744" src="https://github.com/user-attachments/assets/9d14e0a2-0c15-4e8e-af08-97d1af2b99d8" />
 
-```c
-ORG 0000H
-MAIN: MOV TMOD, #10H
-CLR P0.5
-AGAIN: MOV TH1, #9EH
-MOV TL1, #58H
-SETB TR1
-WAIT: JNB TF1, WAIT
-CLR TR1
-CLR TF1
-CPL P0.5
-SJMP AGAIN
-END
-```
 ---
 ### OUTPUT
-<img width="1470" height="1077" alt="Screenshot 2025-10-30 230457" src="https://github.com/user-attachments/assets/3fde855d-94d5-48b8-af99-a1ad8ad9cb8a" />
+<img width="635" height="421" alt="Screenshot 2025-11-02 001425" src="https://github.com/user-attachments/assets/855001ad-a617-4f34-ad0c-e528070d3aa0" />
 
-<img width="1466" height="903" alt="Screenshot 2025-10-30 230625" src="https://github.com/user-attachments/assets/e58ba0d9-f88f-4dfa-9b91-119786dc1652" />
 
 
 ---
 ### RESULT
-Thus a 250 ms delay using Timer 1 in Mode 1 and blink an LED connected to Port 0.5
-continuously using 8051 KEIL was done and shown the output.
+Thus an assembly language program in 8086 to calculate the sum of 5 numbers stored sequentially in memory and store the result in a another memory location is written and executed.
